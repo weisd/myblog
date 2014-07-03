@@ -5,11 +5,15 @@ import (
 )
 
 type MainController struct {
-	beego.Controller
+	CommonControllers
 }
 
 func (this *MainController) Get() {
-	this.Data["Website"] = "beego.me"
-	this.Data["Email"] = "astaxie@gmail.com"
-	this.TplNames = "index.tpl"
+    beego.Info("main")
+    /*
+    this.Data["name"] = "weisd"
+
+    this.TplNames = "main/index.html"
+    */
+    this.Redirect("/qrcode", 302)
 }
