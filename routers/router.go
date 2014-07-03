@@ -8,4 +8,6 @@ import (
 func init() {
     beego.Router("/", &controllers.MainController{})
     beego.Router("/qrcode", &controllers.QrcodeController{})
+
+    beego.Handler("/wechat", NewWechatServer())
 }
