@@ -44,37 +44,37 @@ func UnknownRequestHandler(w http.ResponseWriter, r *http.Request, msg []byte){
     beego.Info(msg)
 }
 
-func TextRequestHandler(http.ResponseWriter, *http.Request, *request.Text){
+func TextRequestHandler(w http.ResponseWriter, r *http.Request, text *request.Text){
 }
 
-func ImageRequestHandler (http.ResponseWriter, *http.Request, *request.Image){
+func ImageRequestHandler (w http.ResponseWriter, r *http.Request, img *request.Image){
 }
-func VoiceRequestHandler (http.ResponseWriter, *http.Request, *request.Voice){
+func VoiceRequestHandler (w http.ResponseWriter, r *http.Request, voice *request.Voice){
 }
-func VoiceRecognitionRequestHandler (http.ResponseWriter, *http.Request, *request.VoiceRecognition){
+func VoiceRecognitionRequestHandler (w http.ResponseWriter, r *http.Request, voiceRecognition *request.VoiceRecognition){
 }
-func VideoRequestHandler (http.ResponseWriter, *http.Request, *request.Video){
+func VideoRequestHandler (w http.ResponseWriter, r *http.Request, video *request.Video){
 }
-func LocationRequestHandler (http.ResponseWriter, *http.Request, *request.Location){
+func LocationRequestHandler (w http.ResponseWriter, r *http.Request, location *request.Location){
 }
-func LinkRequestHandler (http.ResponseWriter, *http.Request, *request.Link){
+func LinkRequestHandler (w http.ResponseWriter, r *http.Request, link *request.Link){
 }
-func SubscribeEventHandler (http.ResponseWriter, *http.Request, *request.SubscribeEvent){
+func SubscribeEventHandler (w http.ResponseWriter, r *http.Request, event *request.SubscribeEvent){
 }
-func UnsubscribeEventHandler (http.ResponseWriter, *http.Request, *request.UnsubscribeEvent){
+func UnsubscribeEventHandler (w http.ResponseWriter, r *http.Request, event *request.UnsubscribeEvent){
 }
-func SubscribeByScanEventHandler (http.ResponseWriter, *http.Request, *request.SubscribeByScanEvent){
+func SubscribeByScanEventHandler (w http.ResponseWriter, r *http.Request, event *request.SubscribeByScanEvent){
 }
-func ScanEventHandler (http.ResponseWriter, *http.Request, *request.ScanEvent){
+func ScanEventHandler (w http.ResponseWriter, r *http.Request, event *request.ScanEvent){
 }
-func LocationEventHandler (http.ResponseWriter, *http.Request, *request.LocationEvent){
+func LocationEventHandler (w http.ResponseWriter, r *http.Request, event *request.LocationEvent){
 }
-func MenuClickEventHandler (http.ResponseWriter, *http.Request, *request.MenuClickEvent){
+func MenuClickEventHandler (w http.ResponseWriter, r *http.Request, event *request.MenuClickEvent){
 }
-func MenuViewEventHandler (http.ResponseWriter, *http.Request, *request.MenuViewEvent){
+func MenuViewEventHandler (w http.ResponseWriter, r *http.Request, event *request.MenuViewEvent){
 }
-func MassSendJobFinishEventHandler (http.ResponseWriter, *http.Request, *request.MassSendJobFinishEvent){
+func MassSendJobFinishEventHandler (w http.ResponseWriter, r *http.Request, event *request.MassSendJobFinishEvent){
 }
-func MerchantOrderEventHandler (http.ResponseWriter, *http.Request, *request.MerchantOrderEvent){
+func MerchantOrderEventHandler (w http.ResponseWriter, r *http.Request, event *request.MerchantOrderEvent){
 }
 
