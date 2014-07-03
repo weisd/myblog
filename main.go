@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-    beego.Run(":80")
+    beego.Run()
 }
 
