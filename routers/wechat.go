@@ -36,15 +36,18 @@ func NewWechatServer() *wechat.Server{
 }
 
 func InvalidRequestHandler(w http.ResponseWriter, r *http.Request, err error){
+    beego.Info("xx")
     beego.Info(err)
 }
 
 // 非法请求
 func UnknownRequestHandler(w http.ResponseWriter, r *http.Request, msg []byte){
+    beego.Info("xx2")
     beego.Info(msg)
 }
 
 func TextRequestHandler(w http.ResponseWriter, r *http.Request, text *request.Text){
+    beego.Info(text)
 }
 
 func ImageRequestHandler (w http.ResponseWriter, r *http.Request, img *request.Image){
